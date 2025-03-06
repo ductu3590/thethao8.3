@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tỷ số và Lịch thi đấu Thể thao</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header style="
+            background-image: url('banner.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            margin-bottom: 20px;
+        ">
+            <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+            <h1 style="margin-bottom: 10px;">Giải thể thao chào mừng ngày Quốc tế Phụ nữ</h1>
+            <p style="font-size: 1.1em;">Uỷ ban nhân dân tỉnh Yên Bái - Sở Nông nghiệp và Môi trường</p>
+            </div>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="football">
+                <i class="fas fa-volleyball-ball"></i> Bóng chuyền hơi
+            </button>
+            <button class="tab-btn" data-tab="pickleball">
+                <i class="fas fa-table-tennis"></i> Pickleball Nam
+            </button>
+            <button class="tab-btn" data-tab="tennis">
+                <i class="fas fa-table-tennis"></i> Pickleball Nữ
+            </button>
+        </div>
+        <div class="tab-content">
+            <!-- Nội dung tab Bóng chuyền hơi -->
+            <div class="tab-pane active" id="football">
+            <div class="section-toggle">
+                <button class="toggle-btn active" data-section="ranking-volleyball">Bảng xếp hạng</button>
+                <button class="toggle-btn" data-section="schedule-volleyball">Lịch thi đấu</button>
+            </div>
+
+            <!-- Phần hiển thị bảng xếp hạng -->
+            <div class="section active" id="ranking-volleyball">
+                <h2>Bảng xếp hạng Bóng chuyền hơi</h2>
+                <iframe width='100%' height='315' src='https://givetour.com/Embed/UmFua2luZyw0NDM5MCxUcnVlLFRydWUsVHJ1ZSxGYWxzZSw0LDEwMA~~'></iframe>
+            </div>
+
+            <!-- Phần hiển thị lịch thi đấu -->
+            <div class="section" id="schedule-volleyball">
+                <h2>Lịch thi đấu Bóng chuyền hơi</h2>
+                <p class="schedule-note">Đây là lịch thi đấu cố định, để xem kết quả mới nhất của giải đấu, vui lòng <a href="https://givetour.com/Stage/GroupStage?leagueId=44390" target="_blank">click vào đây</a></p>
+                <div class="match-container">
+                    <!-- Vòng 1 -->
+                    <div class="match-round">
+                        <h3 class="round-title">Vòng 1</h3>
+                        <div class="schedule">
+                            <div class="match">
+                                <div class="match-info">
+                                    <span class="date">08/03/2025 - 08:00</span>
+                                    <span class="venue">Sân 3</span>
+                                </div>
+                                <div class="teams">
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #1</span>
+                                    </div>
+                                    <div class="score">VS</div>
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #4</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="match">
+                                <div class="match-info">
+                                    <span class="date">08/03/2025 - 08:40</span>
+                                    <span class="venue">Sân 3</span>
+                                </div>
+                                <div class="teams">
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #2</span>
+                                    </div>
+                                    <div class="score">VS</div>
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vòng 2 -->
+                    <div class="match-round">
+                        <h3 class="round-title">Vòng 2</h3>
+                        <div class="schedule">
+                            <div class="match">
+                                <div class="match-info">
+                                    <span class="date">08/03/2025 - 09:30</span>
+                                    <span class="venue">Sân 3</span>
+                                </div>
+                                <div class="teams">
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #2</span>
+                                    </div>
+                                    <div class="score">VS</div>
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #1</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="match">
+                                <div class="match-info">
+                                    <span class="date">08/03/2025 - 10:00</span>
+                                    <span class="venue">Sân 3</span>
+                                </div>
+                                <div class="teams">
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #3</span>
+                                    </div>
+                                    <div class="score">VS</div>
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vòng 3 -->  
+                    <div class="match-round">
+                        <h3 class="round-title">Vòng 3</h3>
+                        <div class="schedule">
+                            <div class="match">
+                                <div class="match-info">
+                                    <span class="date">08/03/2025 - 10:30</span>
+                                    <span class="venue">Sân 3</span>
+                                </div>
+                                <div class="teams">
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #1</span>
+                                    </div>
+                                    <div class="score">VS</div>
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #3</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="match">
+                                <div class="match-info">
+                                    <span class="date">08/03/2025 - 11:00</span>
+                                    <span class="venue">Sân 3</span>
+                                </div>
+                                <div class="teams">
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #4</span>
+                                    </div>
+                                    <div class="score">VS</div>
+                                    <div class="team">
+                                        <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=V');"></div>
+                                        <span class="team-name">Đội #2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://givetour.com/Stage/GroupStage?leagueId=44390" target="_blank" class="view-more-link">Xem chi tiết</a>
+            </div>
+            
+            <!-- Nội dung tab Pickleball -->
+            <div class="tab-pane" id="pickleball">
+                <div class="section-toggle">
+                    <button class="toggle-btn active" data-section="ranking-pickleball">Bảng xếp hạng</button>
+                    <button class="toggle-btn" data-section="schedule-pickleball">Lịch thi đấu</button>
+                </div>
+
+                <!-- Phần hiển thị bảng xếp hạng -->
+                <div class="section active" id="ranking-pickleball">
+                    <h2>Bảng xếp hạng Pickleball - Đôi nam</h2>
+                    <iframe width='100%' height='315' src='https://givetour.com/Embed/UmFua2luZyw0NDM4MyxUcnVlLFRydWUsVHJ1ZSxGYWxzZSw4LDEwMA~~'></iframe>
+                </div>
+
+                <!-- Phần hiển thị lịch thi đấu -->
+                <div class="section" id="schedule-pickleball">
+                    <h2>Lịch thi đấu Pickleball - Đôi nam</h2>
+                    <p class="schedule-note">Đây là lịch thi đấu cố định, để xem kết quả mới nhất của giải đấu, vui lòng <a href="https://givetour.com/Stage/GroupStage?leagueId=44383" target="_blank">click vào đây</a></p>
+                    <div class="match-container">
+                        <!-- Vòng 1 -->
+                        <div class="match-round">
+                            <h3 class="round-title">Vòng 1</h3>
+                            <div class="schedule">
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng A</span>
+                                        <span class="date">08/03/2025 - 08:00</span>
+                                        <span class="venue">Sân 2</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Cường Ánh #1</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Thành Quý #7</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng A</span>
+                                        <span class="date">08/03/2025 - 08:20</span>
+                                        <span class="venue">Sân 2</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Bắc Sơn #3</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Bình Việt #6</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng B</span>
+                                        <span class="date">08/03/2025 - 09:00</span>
+                                        <span class="venue">Sân 1</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Nghĩa Nghĩa #5</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Mạnh Hiếu #2</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng B</span>
+                                        <span class="date">08/03/2025 - 09:00</span>
+                                        <span class="venue">Sân 2</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Việt Hưng #4</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Giang Phúc #8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vòng 2 -->
+                        <div class="match-round">
+                            <h3 class="round-title">Vòng 2</h3>
+                            <div class="schedule">
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng A</span>
+                                        <span class="date">08/03/2025 - 08:40</span>
+                                        <span class="venue">Sân 2</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Thành Quý #7</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Bình Việt #6</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng A</span>
+                                        <span class="date">08/03/2025 - 09:20</span>
+                                        <span class="venue">Sân 2</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Bắc Sơn #3</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Cường Ánh #1</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng B</span>
+                                        <span class="date">09/03/2025 - 09:40</span>
+                                        <span class="venue">Sân 1</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Mạnh Hiếu #2</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Giang Phúc #8</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng B</span>
+                                        <span class="date">09/03/2025 - 09:40</span>
+                                        <span class="venue">Sân 2</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Việt Hưng #4</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Nghĩa Nghĩa #5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vòng 3 -->
+                        <div class="match-round">
+                            <h3 class="round-title">Vòng 3</h3>
+                            <div class="schedule">
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng A</span>
+                                        <span class="date">08/03/2025 - 10:00</span>
+                                        <span class="venue">Sân 2</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Bắc Sơn #3</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Thành Quý #7</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng A</span>
+                                        <span class="date">08/03/2025 - 10:40</span>
+                                        <span class="venue">Sân 1</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Bình Việt #6</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Cường Ánh #1</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng B</span>
+                                        <span class="date">10/03/2025 - 10:20</span>
+                                        <span class="venue">Sân 1</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Giang Phúc #8</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Nghĩa Nghĩa #5</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="league">Bảng B</span>
+                                        <span class="date">10/03/2025 - 10:20</span>
+                                        <span class="venue">Sân 2</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Việt Hưng #4</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=PB');"></div>
+                                            <span class="team-name">Mạnh Hiếu #2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://givetour.com/Stage/GroupStage?leagueId=44383" target="_blank" class="view-more-link">Xem chi tiết</a>
+                </div>
+            </div>
+            
+            <!-- Nội dung tab Quần vợt -->
+            <div class="tab-pane" id="tennis">
+                <div class="section-toggle">
+                    <button class="toggle-btn active" data-section="scores-tennis">Bảng xếp hạng</button>
+                    <button class="toggle-btn" data-section="schedule-tennis">Lịch thi đấu</button>
+                </div>
+
+                <div class="section active" id="scores-tennis">
+                    <h2>Bảng xếp hạng Pickleball Nữ</h2>
+                    <div class="scoreboard">
+                        <iframe width='100%' height='315' src='https://givetour.com/Embed/UmFua2luZyw0NDM4OSxUcnVlLFRydWUsVHJ1ZSxGYWxzZSwzLDEwMA~~'></iframe>
+                    </div>
+                </div>
+
+                <div class="section" id="schedule-tennis">
+                    <h2>Lịch thi đấu Pickleball Nữ</h2>
+                    <p class="schedule-note">Đây là lịch thi đấu cố định, để xem kết quả mới nhất của giải đấu, vui lòng <a href="https://givetour.com/Stage/GroupStage?leagueId=44389" target="_blank">click vào đây</a></p>
+                    <div class="match-container">
+                        <!-- Vòng 1 -->
+                        <div class="match-round">
+                            <h3 class="round-title">Vòng 1</h3>
+                            <div class="schedule">
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="date">08/03/2025 - 08:00</span>
+                                        <span class="venue">Sân 1</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=HT');"></div>
+                                            <span class="team-name">Hà Thuỷ #1</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=NT');"></div>
+                                            <span class="team-name">Nga Thuận #3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vòng 2 -->
+                        <div class="match-round">
+                            <h3 class="round-title">Vòng 2</h3>
+                            <div class="schedule">
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="date">08/03/2025 - 08:20</span>
+                                        <span class="venue">Sân 1</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=NT');"></div>
+                                            <span class="team-name">Nga Thuận #3</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=TT');"></div>
+                                            <span class="team-name">Tuyết Thu #2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vòng 3 -->
+                        <div class="match-round">
+                            <h3 class="round-title">Vòng 3</h3>
+                            <div class="schedule">
+                                <div class="match">
+                                    <div class="match-info">
+                                        <span class="date">08/03/2025 - 08:40</span>
+                                        <span class="venue">Sân 1</span>
+                                    </div>
+                                    <div class="teams">
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=TT');"></div>
+                                            <span class="team-name">Tuyết Thu #2</span>
+                                        </div>
+                                        <div class="score">VS</div>
+                                        <div class="team">
+                                            <div class="team-logo" style="background-image: url('https://placehold.co/40x40?text=HT');"></div>
+                                            <span class="team-name">Hà Thuỷ #1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://givetour.com/Stage/GroupStage?leagueId=44389" target="_blank" class="view-more-link">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Đỗ Đức Tú - Sở Nông nghiệp và Môi trường tỉnh Yên Bái</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
